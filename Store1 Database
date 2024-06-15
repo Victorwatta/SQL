@@ -65,5 +65,11 @@ FROM superstore
 WHERE stock_quantity > 10 AND price >= 100
 ORDER BY stock_quantity DESC;
 
-
+-- # 6 Dsplay the Item name, category and stock quantity with item value more than 3000 in a descending order
+SELECT
+    item_name,category ,stock_quantity,
+    (price * stock_quantity) AS item_value   
+FROM superstore
+WHERE (price * stock_quantity)> 3000
+ORDER BY item_value DESC;
 
