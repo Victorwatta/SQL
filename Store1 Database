@@ -59,3 +59,11 @@ SELECT
 FROM superstore
 ORDER BY stock_quantity DESC;
 
+--#5 Display item name where stock quantity is more than 40 and price is less than or equal to100
+SELECT item_name,price, stock_quantity
+FROM superstore
+WHERE stock_quantity > 10 AND price >= 100
+ORDER BY stock_quantity DESC;
+
+
+
